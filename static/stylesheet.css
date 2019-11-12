@@ -5,23 +5,21 @@ main {
     text-align:center;
 }
 
-.wordbox {
-    text-align: center;
-    border: solid white;
-    margin: 3px;
+.exit {
+    background-color: black;
+    color: white;
 }
 
 .definition {
-    display: inline-block;
+    display: none;
     position: absolute;
-    margin-right: 50%;
-    margin-left: 50%;
+    z-index: 1;
+    margin-right: 65%;
+    margin-left: 35%;
+    padding: 5px;
     background-color: white;
-}
-
-.definition .visible {
-    visibility: visible;
-    right: 50%;
+    width: 25%;
+    border: solid;
 }
 
 .wordbutton {

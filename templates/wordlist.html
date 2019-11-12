@@ -2,7 +2,7 @@
 
 {% block content %}
     <main>
-        <div id="definition" class="definition" style=""></div>
+        <div id="definition" class="definition" style=""> </div>
 
         {% for word in wordlist: %}
         <button onclick="getDef('{{ word }}')" type="button" class="wordbutton" id="{{ word }}"> {{ word }} </button>
