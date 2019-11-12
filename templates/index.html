@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <form action="/words" method="post">
+    <form action="/words" method="post" id="wordform">
         {{ form.hidden_tag() }}
         {{ form.avail_letters.label }}
         {{ form.avail_letters }}
@@ -9,5 +9,20 @@
         {{ form.submit() }}
 
     </form>
+
+    <label>Word Length</label>
+    <select name="wordlength" form="wordform">
+        <option value="default"></option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+
+    <input form="wordform" type="text" placeholder="Pattern" name="pattern"/>
 
 {% endblock %}

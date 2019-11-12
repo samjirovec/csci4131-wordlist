@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<main>
-    {% for word in wordlist: %}
-        <div class="wordbox">{{ word }}</div>
-    {% endfor %}
-</main>
+    <main>
+        <div id="definition" class="definition" style=""></div>
+
+        {% for word in wordlist: %}
+        <button onclick="getDef('{{ word }}')" type="button" class="wordbutton" id="{{ word }}"> {{ word }} </button>
+        {% endfor %}
+
+    </main>
 {% endblock %}

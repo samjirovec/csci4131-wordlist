@@ -1,0 +1,49 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: lightslategray;
+    text-align:center;
+}
+
+.wordbox {
+    text-align: center;
+    border: solid white;
+    margin: 3px;
+}
+
+.definition {
+    display: inline-block;
+    position: absolute;
+    margin-right: 50%;
+    margin-left: 50%;
+    background-color: white;
+}
+
+.definition .visible {
+    visibility: visible;
+    right: 50%;
+}
+
+.wordbutton {
+    background-color: dodgerblue; 
+    border: solid black 0.5px;
+    color: white;
+}
+
+.navigation {
+    background-color: lightcoral;
+    border: solid black;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    width: 50%;
+}
+
+.footer {
+    background-color: lightgreen;
+    border: solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

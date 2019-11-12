@@ -1,16 +1,24 @@
 <html>
     <head>
-        <link rel="stylesheet" href="/static/wordstyle.css">
+        <link rel="stylesheet" href="/static/stylesheet.css">
+        <script src="/static/script.js"></script>
     </head>
     <body>
         {% block navbar %}
-        <nav>
-            <h1>Word List Program for {{name}}</h1>
+        <nav class="navigation">
+            <h1>Word Finder: Sam Jirovec</h1>
         </nav>
         {% endblock %}
 
         {% block content %}
         default content
         {% endblock %}
+
+        {% block footer %}
+        <footer class="footer">
+            <a href="https://github.umn.edu/jirov004/4131-WordFinder">Link To My GitHub Repository</a>
+        </footer>
+        {% endblock %}
+
     </body>
 </html>
